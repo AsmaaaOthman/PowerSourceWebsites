@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family:'Poppins', sans-serif !important
+}
+html{
+    font-size:60.5%;
+}
+body{
+    background-color:var(--gray-dark);
+    overflow-x:hidden
+}
+:root{
+    --black:#151515;
+    --black-lite:rgba(0, 0, 0, 0.61);
+    --green:#64a424;
+    --white:#fff;
+    --gray:#232836;
+    --gray-dark:#343a40;
+    --gray-lite:#6c757d44
+}
+::selection{
+    background-color:var(--green);
+    color:var(--white)
+}
+::-webkit-scrollbar{
+    height:.5rem;
+    width:1rem
+}
+::-webkit-scrollbar-track{
+    background-color:transparent
+}
+::-webkit-scrollbar-thumb{
+    background-color:var(--gray-dark)
+}
+.container{
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:var(--gray-dark);
+    column-gap:2rem;
+}
+header{
+    text-align:center;
+    font-size:2rem;
+    font-weight: 600;
+    color:var(--gray)
+}
+.form{
+    position:absolute;
+    max-width:350px;
+    width:100%;
+    padding:2rem;
+    border-radius:.5rem;
+    margin-top:1rem;
+    background-color:var(--white)
+}
+.form.signup{
+    opacity:0;
+    pointer-events:none;
+}
+.forms.show-signup .form.signup{
+    opacity:1;
+    pointer-events:auto;
+}
+.forms.show-signup .form.login{
+    opacity:1;
+    pointer-events:auto;
+}
+.form .field{
+    position:relative;
+    height:50px;
+    width:100%;
+    margin-top:1rem;
+    border-radius:.5rem;
+}
+.form .field input ,.form .field button{
+    height:100%;
+    width:100%;
+    border:none;
+    font-size:1.7rem;
+    font-weight:500;
+    border-radius:.5rem;
+    cursor: pointer
+}
+.form .field input{
+    padding:0 1rem;
+    border:1px solid #CACACA
+}
+.form .field input:focus{
+    border-bottom-width:.3rem;
+}
+.form .field input[placeholder]{
+    font-size:1.5rem;
+    color:var(--green);
+
+}
+.form .field button{
+    color:var(--white);
+    background-color:var(--gray-dark);
+    transition:all .5s ease-in
+}
+.form .field button:hover{
+    background-color:#232836d4
+}
+.form .field .eye-icon{
+    position:absolute;
+    top:50%;
+    right:10px;
+    transform:translateY(-50%);
+    font-size:1.8rem;
+    padding:.5rem;
+    cursor:pointer;
+    color:#8b8b8b
+
+}
+.form .form-link{
+    text-align:center;
+    margin:2rem 0
+}
+.form .form-link span , .form .form-link a{
+    font-size:1.5rem;
+    font-weight:600;
+    color:var(--gray)
+}
+.form .form-link a{
+    text-decoration:none;
+    color:var(--green)
+}
+.form .form-link a:hover ,.form-content a:hover{
+    text-decoration:underline
+}
+.form .line{
+    position:relative;
+    height:1px;
+    width:100%;
+    margin-bottom:2rem;
+    background-color:#d4d4d4
+}
+.form .line::before{
+    content:'Or';
+    position:absolute;
+    top:50%;
+    left:50%;
+    font-size:1.5rem;
+    font-weight:600;
+    transform:translate(-50%,-50%);
+    background-color:var(--white);
+    color:var(--gray);
+    padding:0 .5rem;
+}
+.form .media-options a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.8rem;
+    border-radius:.5rem
+}
+.form .media-options a.media{
+    background-color:var(--gray-dark);
+    color:var(--white)
+
+}
+.form .media-options a.media .media-icon{
+    margin-right:.5rem;
+    height:28px;
+    width:28px;
+    color:var(--gray-dark);
+    font-size:2rem;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:var(--white);
+
+}
+.form .media-options .media-icon{
+    position:absolute;
+    top:50%;
+    left:15px;
+    transform:translateY(-50%);
+}

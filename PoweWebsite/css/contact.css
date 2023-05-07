@@ -1,0 +1,22 @@
+/*
+======================= Start Contact Us Section =====================
+*/ 
+.navbar .navbar-nav .nav-item.drop-item .dropdown-list.drop-plus {
+    left:13%
+}
+
+.contact{
+    padding:8rem 0 4rem 0;
+    background-color:var(--black)
+}
+.contact .contact-map{
+    margin-top:6rem
+}
+.contact iframe{
+    width:100%;
+    border-radius:.5rem
+}
+
+/*
+======================= End Contact Us Section =====================
+*/

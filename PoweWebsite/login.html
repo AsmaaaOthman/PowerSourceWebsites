@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="image/cropped-logo.png" type="image/png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/login.css">
+
+        <!-- Boxicons CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+        <title>Log In</title>
+    </head>
+    <body>
+            <!-- Start login form -->
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login Now</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input" required>
+                        </div>
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password" required>
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">forgot password</a>
+                        </div>
+                        <div class="field input-field">
+                            <button type="submit">Login</button>
+                        </div>
+                    </form>
+                    <div class="form-link mb-4">
+                        <span>Don't have an account yet
+                            <a href="#" class="link signup-link"> Sign up</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Login form -->
+
+
+            <!-- Start sign up form-->
+            <div class="form login signup">
+                <div class="form-content">
+                    <header>Sign up</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="text" placeholder="First name" class="input" required>
+                        </div>
+                        <div class="field input-field">
+                            <input type="text" placeholder="Last name" class="input" required>
+                        </div>
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input" required>
+                        </div>
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password" required>
+                        </div>
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirm Password" class="password" required>
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+                        <div class="field input-field">
+                            <button type="submit">Sign up</button>
+                        </div>
+                    </form>
+                    <div class="form-link mb-4">
+                        <span>Already have an account
+                            <a href="#" class="link login-link"> Login Now</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- End sign up form -->
+        </section>
+
+        <script src="js/login.js"></script>
+        
+    </body>
+</html>
